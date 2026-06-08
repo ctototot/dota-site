@@ -1,27 +1,26 @@
-﻿<!DOCTYPE html> <!-- Указывает браузеру, что документ написан на языке HTML5 -->
-<html lang="ru"> <!-- Открывающий тег сайта. lang="ru" говорит поисковым системам, что сайт на русском языке -->
-<head> <!-- В теге head прописываются скрытые технические настройки для браузера -->
-    <meta charset="UTF-8"> <!-- Устанавливает кодировку UTF-8 (позволяет сайту понимать кириллицу) -->
-    <title>Dota 2 — Галерея</title> <!-- Текст, отображаемый на вкладке браузера -->
-    <!-- Подключаем внешний файл стилей style.css -->
-    <link rel="stylesheet" href="style.css"> <!-- Тег link связывает эту страницу с CSS-файлом. Без него не будет дизайна -->
-</head> <!-- Конец настроек -->
-<body> <!-- Открывающий тег тела сайта, всё содержимое которого видно пользователю -->
+﻿<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Dota 2 — Галерея</title> 
+    
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+<div class="container"> 
 
-<div class="container"> <!-- Создаем основной блок, в котором будет лежать весь контент, и задаем ему класс container для CSS -->
+    
+    <nav class="menu"> 
+        <a href="index.html">🏠 Главная</a>
+        <a href="catalog.html">📜 Герои</a> 
+        <a href="gallery.html">🖼 Галерея</a> 
+        <a href="contacts.html">📞 Контакты</a> 
+    </nav>
 
-    <!-- Навигационное меню сайта -->
-    <nav class="menu"> <!-- Блок навигации, содержит ссылки на другие страницы -->
-        <a href="index.html">🏠 Главная</a> <!-- Кликабельная ссылка для возврата на главную -->
-        <a href="catalog.html">📜 Герои</a> <!-- Кликабельная ссылка для перехода в каталог -->
-        <a href="gallery.html">🖼 Галерея</a> <!-- Кликабельная ссылка для страницы Галерея -->
-        <a href="contacts.html">📞 Контакты</a> <!-- Кликабельная ссылка для перехода в Контакты -->
-    </nav> <!-- Конец меню навигации -->
+    
+    <h1>Галерея героев Dota 2</h1> 
 
-    <!-- Заголовок страницы -->
-    <h1>Галерея героев Dota 2</h1> <!-- Главный заголовок h1 (выводится самым крупным шрифтом) -->
-
-    <!-- Сетка с картинками героев (картинки загружаются с официального сервера Valve, чтобы не занимать место на нашем хостинге) -->
+    
     <div class="gallery">
         <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/antimage.png" alt="Anti-Mage" title="Anti-Mage">
         <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/axe.png" alt="Axe" title="Axe">
@@ -150,14 +149,15 @@
         <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/muerta.png" alt="Muerta" title="Muerta">
         <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/kez.png" alt="Kez" title="Kez">
         <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/largo.png" alt="Largo" title="Largo">
-    </div> <!-- Закрываем контейнер сетки с картинками -->
+    </div> 
 
-    <!-- Подвал страницы -->
-    <footer> <!-- Тег footer используется для нижней панели страницы -->
-        <p>Неофициальный гайд по Dota 2 | 2026</p> <!-- Текст с копирайтом (абзац p) -->
-    </footer> <!-- Закрываем подвал -->
+ 
+    <footer> 
+        <p>Неофициальный гайд по Dota 2 | 2026</p> 
+    </footer> 
+</div> 
 
-</div> <!-- Закрываем главный блок страницы -->
-
+</body> 
+</html> 
 </body> <!-- Закрываем видимую область сайта -->
 </html> <!-- Конец файла HTML -->
